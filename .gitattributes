@@ -1,0 +1,2 @@
+middleware.zip filter=lfs diff=lfs merge=lfs -text
+jdk1.7.0_80.zip filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,37 @@
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "weblogic-cluster-image-streams",
+        "annotations": {
+            "description": "ImageStream definitions for Oracle WebLogicServer products."
+        }
+    },
+    "items": [
+        {
+            "kind": "ImageStream",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "weblogic-cluster-openshift"
+            },
+            "spec": {
+                "dockerImageRepository": "docker.io/ora01000/weblogic-cluster",
+                "tags": [
+                    {
+                        "name": "10.3.6",
+                        "annotations": {
+                            "description": "Oracle WebLogicServer11g(10.3.6) for cluster",
+                            "iconClass": "icon-oracle",
+                            "tags": "builder,weblogic,javaee,java,xpaas,cluster",
+                            "supports":"weblogic:10.3.6,javaee:6,java:7,xpaas:1.1,cluster",
+                            "sampleRepo": "https://gitlab.com/ora01000/j2ee.git",
+                            "sampleContextDir": "/",
+                            "sampleRef": "master",
+                            "version": "10.3.6"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
